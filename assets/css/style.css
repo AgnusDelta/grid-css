@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: "ubuntu", sans-serif;
+    font-size: 1.2rem;
+}
+
+.contenedor > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.encabezado {
+    grid-area:encabezado ;
+    background-color: orange;
+}
+
+.navegacion {
+    grid-area: navegacion ;
+    background-color: blue ;
+    color: whitesmoke;
+
+}
+
+.menu_lateral {
+    grid-area: menu_lateral ;
+    background-color: greenyellow ;
+    height: 100px !important;
+
+
+}
+
+.articulo {
+    grid-area: articulo ;
+    background-color: aquamarine ;
+
+}
+
+.pie_de_pagina {
+    grid-area: pie_de_pagina ;
+    background-color: yellow ;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "encabezado encabezado encabezado encabezado encabezado encabezado" 50px
+        "navegacion articulo articulo articulo articulo menu_lateral" 100px
+        "pie_de_pagina pie_de_pagina pie_de_pagina pie_de_pagina pie_de_pagina pie_de_pagina" 50px
+
+}
+
